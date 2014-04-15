@@ -6,7 +6,7 @@
 #    
 #    
 #    fme.exe Demo_Parameters.fmw
-#          --BFSNR 954
+#          --BFSNR $(RANDOMBFS)
 #    
 #    
 #! PASSWORD=""
@@ -38,7 +38,7 @@
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2014-04-15T10:42:21"
+#! LAST_SAVE_DATE="2014-04-15T10:52:58"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -642,7 +642,7 @@
 #! IDENTIFIER="3"
 #! FEAT_GEOMTYPE="wkb_point wkb_point_xyz wkb_line wkb_line_xyz wkb_polygon wkb_polygon_xyz wkb_geometry_collection wkb_geometry_collection_xyz wkb_multi_point wkb_multi_point_xyz wkb_multi_line wkb_multi_line_xyz wkb_multi_polygon wkb_multi_polygon_xyz"
 #! POSITION="103 -229"
-#! ORDER="4"
+#! ORDER="3"
 #! COLLAPSED="false"
 #! KEYWORD="SPATIALITE_1"
 #! ENABLED="true"
@@ -673,13 +673,13 @@
 #! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #! IS_SOURCE="false"
-#! NODE_NAME="$(RANDOM)"
+#! NODE_NAME="$(BFSNR)"
 #! IS_EDITABLE="true"
 #! IDENTIFIER="7"
 #! FEAT_GEOMTYPE="shape_point"
-#! POSITION="1932 -120"
-#! ORDER="6"
-#! COLLAPSED="true"
+#! POSITION="1998 -407"
+#! ORDER="8"
+#! COLLAPSED="false"
 #! KEYWORD="SHAPE_1"
 #! ENABLED="true"
 #! FANOUT="No"
@@ -709,7 +709,7 @@
 #! <GLOBAL_PARAMETERS>
 #! <GLOBAL_PARAMETER
 #! GUI_LINE="GUI INTEGER_OR_ATTR BFSNR BFS-Nummer:"
-#! DEFAULT_VALUE="954"
+#! DEFAULT_VALUE="$(RANDOMBFS)"
 #! IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
@@ -736,13 +736,33 @@
 #! <COMMENTS>
 #! <COMMENT
 #! IDENTIFIER="4"
-#! COMMENT_VALUE="geodb_bauinv_bauinv"
-#! POSITION="103 -149"
-#! ORDER="3"
+#! COMMENT_VALUE="Bauinventar (Spatialite)"
+#! POSITION="59 -90"
+#! ORDER="4"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="3"
+#! />
+#! <COMMENT
+#! IDENTIFIER="11"
+#! COMMENT_VALUE="Gemeinde-Shapefile"
+#! POSITION="1978 -307"
+#! ORDER="5"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="7"
+#! />
+#! <COMMENT
+#! IDENTIFIER="12"
+#! COMMENT_VALUE="Gewünschte Gemeinde per&#13;&#10;BFS-Nummer herausfiltern"
+#! POSITION="961 -129"
+#! ORDER="7"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="8"
 #! />
 #! </COMMENTS>
 #! <CONSTANTS>
@@ -754,8 +774,8 @@
 #! IDENTIFIER="8"
 #! TYPE="TestFilter"
 #! VERSION="1"
-#! POSITION="897 -219"
-#! ORDER="5"
+#! POSITION="1045 -325"
+#! ORDER="6"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! >
@@ -838,7 +858,7 @@ GUI IGNORE SourceDataset_SPATIALITE_1,SPATIALITE_IN_ENCODING_SPATIALITE_1,DestDa
 
 
 
-DEFAULT_MACRO BFSNR 954
+DEFAULT_MACRO BFSNR $(RANDOMBFS)
 GUI INTEGER BFSNR BFS-Nummer:
 DEFAULT_MACRO SPATIALITE_DB bauinv.sqlite
 GUI IGNORE MULTIFILE SPATIALITE_DB SpatiaLite_Database_Files(*.sl3;*.db;*.sqlite)|*.sl3;*.db;*.sqlite|SpatiaLite_Database_Files(*.sl3)|*.sl3|SpatiaLite_Database_Files(*.db)|*.db|SpatiaLite_Database_Files(*.sqlite)|*.sqlite|All_files(*.*)|*.* Source SpatiaLite Database File(s):
@@ -1089,7 +1109,7 @@ FACTORY_DEF * TeeFactory FACTORY_NAME TestFilter_<lt>UNFILTERED<gt> INPUT FEATUR
 FACTORY_DEF * TeeFactory   FACTORY_NAME "TestFilter <lt>UNFILTERED<gt> Output Nuker"   INPUT FEATURE_TYPE TestFilter_<lt>UNFILTERED<gt>
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "TestFilter_BFSFILTER -> $(RANDOM) Correlator"    INPUT FEATURE_TYPE TestFilter_BFSFILTER    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,SHAPE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,$(RANDOM__FMEENCODED__))
+FACTORY_DEF * TeeFactory    FACTORY_NAME "TestFilter_BFSFILTER -> $(BFSNR) Correlator"    INPUT FEATURE_TYPE TestFilter_BFSFILTER    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,SHAPE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,$(BFSNR__FMEENCODED__))
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   INPUT FEATURE_TYPE *   TEST @Value(__wb_out_feat_type__) != ""   OUTPUT PASSED FEATURE_TYPE *     @FeatureType(@Value(__wb_out_feat_type__))   OUTPUT FAILED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
@@ -1098,4 +1118,4 @@ FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   IN
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
 
 # -------------------------------------------------------------------------
-SHAPE_1_DEF "$(RANDOM)"   SHAPE_GEOMETRY               shape_point   url                          char(255)   nummer                       char(255)   plz                          number(11,0)   k_objekt                     char(255)   baugruppe1                   char(255)   code                         number(11,0)   baugruppe3                   char(255)   gemeinde                     char(255)   strasse                      char(255)   begid                        number(11,0)   bfs                          number(11,0)   baugruppe2                   char(255)   io_id                        number(11,0)   koord_y                      number(11,0)   ort                          char(255)   status                       char(255)   koord_x                      number(11,0)
+SHAPE_1_DEF "$(BFSNR)"   SHAPE_GEOMETRY               shape_point   url                          char(255)   nummer                       char(255)   plz                          number(11,0)   k_objekt                     char(255)   baugruppe1                   char(255)   code                         number(11,0)   baugruppe3                   char(255)   gemeinde                     char(255)   strasse                      char(255)   begid                        number(11,0)   bfs                          number(11,0)   baugruppe2                   char(255)   io_id                        number(11,0)   koord_y                      number(11,0)   ort                          char(255)   status                       char(255)   koord_x                      number(11,0)
