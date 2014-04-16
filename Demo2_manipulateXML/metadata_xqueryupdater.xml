@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:bee="http://www.be.ch/bve/agi/2010/bee" xmlns:che="http://www.geocat.ch/2008/che" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml" xmlns:sdi="http://www.easysdi.org/2011/sdi" xmlns:geonet="http://www.fao.org/geonetwork">
+    <gmd:language>
+      <gco:CharacterString>deu</gco:CharacterString>
+    </gmd:language>
+    <gmd:characterSet>
+      <gmd:MD_CharacterSetCode codeListValue="utf8" codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_CharacterSetCode"/>
+    </gmd:characterSet>
+    <gmd:locale>
+      <gmd:PT_Locale id="FR">
+        <gmd:languageCode>
+          <gmd:LanguageCode codeListValue="fra" codeList="#LanguageCode">Français</gmd:LanguageCode>
+        </gmd:languageCode>
+        <gmd:characterEncoding>
+          <gmd:MD_CharacterSetCode codeListValue="utf8" codeList="#MD_CharacterSetCode">UTF8</gmd:MD_CharacterSetCode>
+        </gmd:characterEncoding>
+      </gmd:PT_Locale>
+    </gmd:locale>
+    <gmd:fileIdentifier>
+      <gco:CharacterString>bc56b1bb-cb3d-4559-90e8-4c826abec6c3</gco:CharacterString>
+    </gmd:fileIdentifier>
+    <gmd:datestamp>
+      <gco:DateTime>2014-04-02T00:00:00</gco:DateTime>
+    </gmd:datestamp>
+    <gmd:metadataStandardName>
+      <gco:CharacterString>ISO 19115::2003/19139 (Profil BE)</gco:CharacterString>
+    </gmd:metadataStandardName>
+    <gmd:metadataStandardversion>
+      <gco:CharacterString>1.0</gco:CharacterString>
+    </gmd:metadataStandardversion>
+    <gmd:hierarchyLevel>
+      <gmd:MD_ScopeCode codeListValue="dataset" codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode"/>
+    </gmd:hierarchyLevel>
+    <gmd:hierarchyLevelName>
+      <gco:CharacterString>Geoprodukt - Géoproduit</gco:CharacterString>
+    </gmd:hierarchyLevelName>
+    <gmd:contact>
+      <gmd:role>
+        <gmd:CI_RoleCode codeListValue="pointOfContact" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode"/>
+      </gmd:role>
+      <gmd:CI_ResponsibleParty>
+        <gmd:individualFirstName>
+          <gco:CharacterString>Sabine</gco:CharacterString>
+        </gmd:individualFirstName>
+        <gmd:individualLastName>
+          <gco:CharacterString>Beutner</gco:CharacterString>
+        </gmd:individualLastName>
+        <gmd:organisationName>
+          <gco:CharacterString>Amt für Geoinformation des Kantons Bern</gco:CharacterString>
+        </gmd:organisationName>
+        <gmd:address>
+          <gmd:CI_Address>
+            <gmd:streetName>
+              <gco:CharacterString>Reiterstrasse 11</gco:CharacterString>
+            </gmd:streetName>
+            <gmd:addressLine>
+              <gco:CharacterString>Geobasisdaten</gco:CharacterString>
+            </gmd:addressLine>
+            <gmd:postBox>
+              <gco:Decimal/>
+            </gmd:postBox>
+            <gmd:postalCode>
+              <gco:CharacterString>3011</gco:CharacterString>
+            </gmd:postalCode>
+            <gmd:city>
+              <gco:CharacterString>Bern</gco:CharacterString>
+            </gmd:city>
+            <gmd:country>
+              <gmd:CountryCodeISO>CH</gmd:CountryCodeISO>
+            </gmd:country>
+          </gmd:CI_Address>
+        </gmd:address>
+        <gmd:phone>
+          <gmd:CI_Telephone>
+            <gmd:number>
+              <gco:CharacterString>+41 (31) 633 33 11</gco:CharacterString>
+            </gmd:number>
+            <gmd:numberType>
+              <gmd:CI_NumberTypeCode codeListValue="mainNumber" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_NumberTypeCode"/>
+            </gmd:numberType>
+          </gmd:CI_Telephone>
+        </gmd:phone>
+        <gmd:phone>
+          <gmd:CI_Telephone>
+            <gmd:number>
+              <gco:CharacterString>+41 (31) 633 33 43</gco:CharacterString>
+            </gmd:number>
+            <gmd:numberType>
+              <gmd:CI_NumberTypeCode codeListValue="directNumber" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_NumberTypeCode"/>
+            </gmd:numberType>
+          </gmd:CI_Telephone>
+        </gmd:phone>
+        <gmd:phone>
+          <gmd:CI_Telephone>
+            <gmd:number>
+              <gco:CharacterString>+41 (31) 633 33 40</gco:CharacterString>
+            </gmd:number>
+            <gmd:numberType>
+              <gmd:CI_NumberTypeCode codeListValue="facsimile" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_NumberTypeCode"/>
+            </gmd:numberType>
+          </gmd:CI_Telephone>
+        </gmd:phone>
+        <gmd:electronicalMailAddress>
+          <gco:CharacterString>sabine.beutner@bve.be.ch</gco:CharacterString>
+        </gmd:electronicalMailAddress>
+        <gmd:linkage>
+          <gco:CharacterString/>
+          <gmd:PT_FreeText>
+            <gmd:textGroup>
+              <gmd:LocalisedCharacterString locale="#FR"/>
+            </gmd:textGroup>
+          </gmd:PT_FreeText>
+        </gmd:linkage>
+      </gmd:CI_ResponsibleParty>
+    </gmd:contact>
+    <gmd:identificationInfo>
+      <gmd:MD_DataIdentification>
+        <gmd:topicCategory>
+          <gmd:MD_TopicCategoryCode codeListValue="society" codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_TopicCategoryCode"/>
+        </gmd:topicCategory>
+        <gmd:descriptiveKeywords>
+          <gmd:MD_Keywords>
+            <gmd:keyword>
+              <gco:CharacterString>Archäologie</gco:CharacterString>
+              <gmd:PT_FreeText>
+                <gmd:textGroup>
+                  <gmd:LocalisedCharacterString locale="#FR">archéologie</gmd:LocalisedCharacterString>
+                </gmd:textGroup>
+              </gmd:PT_FreeText>
+            </gmd:keyword>
+            <gmd:keyword>
+              <gco:CharacterString>Inventar</gco:CharacterString>
+              <gmd:PT_FreeText>
+                <gmd:textGroup>
+                  <gmd:LocalisedCharacterString locale="#FR">inventaire (environnement)</gmd:LocalisedCharacterString>
+                </gmd:textGroup>
+              </gmd:PT_FreeText>
+            </gmd:keyword>
+          </gmd:MD_Keywords>
+        </gmd:descriptiveKeywords>
+        <gmd:citation>
+          <gmd:CI_Citation>
+            <gmd:title>
+              <gco:CharacterString>Archäologisches Inventar</gco:CharacterString>
+              <gmd:PT_FreeText>
+                <gmd:textGroup>
+                  <gmd:LocalisedCharacterString locale="#FR">Inventaire archéologique</gmd:LocalisedCharacterString>
+                </gmd:textGroup>
+              </gmd:PT_FreeText>
+            </gmd:title>
+            <gmd:otherCitationDetails>
+              <gco:CharacterString>ARCHINV: Archäologisches Inventar des Kantons Bern</gco:CharacterString>
+              <gmd:PT_FreeText>
+                <gmd:textGroup>
+                  <gmd:LocalisedCharacterString locale="#FR">ARCHINV: Inventaire archéologique du canton de Berne</gmd:LocalisedCharacterString>
+                </gmd:textGroup>
+              </gmd:PT_FreeText>
+            </gmd:otherCitationDetails>
+            <gmd:date>
+              <gmd:CI_Date>
+                <gmd:date>
+                  <gco:Date>2010-07-31</gco:Date>
+                </gmd:date>
+                <gmd:dateType>
+                  <gmd:CI_DateTypeCode codeListValue="creation" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode"/>
+                </gmd:dateType>
+              </gmd:CI_Date>
+            </gmd:date>
+            <gmd:date>
+              <gmd:CI_Date>
+                <gmd:date>
+                  <gco:Date>2014-04-16</gco:Date>
+                </gmd:date>
+                <gmd:dateType>
+                  <gmd:CI_DateTypeCode codeListValue="publication" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode"/>
+                </gmd:dateType>
+              </gmd:CI_Date>
+            </gmd:date>
+            <gmd:date>
+              <gmd:CI_Date>
+                <gmd:date>
+                  <gco:Date>2014-03-20</gco:Date>
+                </gmd:date>
+                <gmd:dateType>
+                  <gmd:CI_DateTypeCode codeListValue="revision" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode"/>
+                </gmd:dateType>
+              </gmd:CI_Date>
+            </gmd:date>
+          </gmd:CI_Citation>
+        </gmd:citation>
+        <gmd:abstract>
+          <gco:CharacterString>Das Archäologische Inventar des Kantons Bern enthält sämtliche bekannten archäologischen Fundstellen des Kantons. Eine archäologische Fundstelle kann vom einzelnen Fund-Gegenstand bis zu komplexen und grossflächig im Boden erhaltenen Baustrukturen ganz verschiedene Dinge umfassen.</gco:CharacterString>
+          <gmd:PT_FreeText>
+            <gmd:textGroup>
+              <gmd:LocalisedCharacterString locale="#FR">L’Inventaire archéologique du canton de Berne comprend tous les sites archéologiques connus du canton. Un site archéologique peut recouvrir différentes choses ; il peut s’agit de la découverte d’un objet isolé ou de structures aménagées complexes et étendues, enfouies dans le sous-sol.</gmd:LocalisedCharacterString>
+            </gmd:textGroup>
+          </gmd:PT_FreeText>
+        </gmd:abstract>
+        <che:basicGeodataID>
+          <gco:CharacterString/>
+        </che:basicGeodataID>
+        <gmd:pointOfContact>
+          <gmd:role>
+            <gmd:CI_RoleCode codeListValue="principalInvestigator" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode"/>
+          </gmd:role>
+          <gmd:CI_ResponsibleParty>
+            <gmd:individualFirstName>
+              <gco:CharacterString>Wenke</gco:CharacterString>
+            </gmd:individualFirstName>
+            <gmd:individualLastName>
+              <gco:CharacterString>Schimmelpfennig</gco:CharacterString>
+            </gmd:individualLastName>
+            <gmd:organisationName>
+              <gco:CharacterString>Amt für Kultur des Kantons Bern Archäologischer Dienst</gco:CharacterString>
+            </gmd:organisationName>
+            <gmd:address>
+              <gmd:CI_Address>
+                <gmd:streetName>
+                  <gco:CharacterString>Brünnenstr. 66</gco:CharacterString>
+                </gmd:streetName>
+                <gmd:addressLine>
+                  <gco:CharacterString/>
+                </gmd:addressLine>
+                <gmd:postBox>
+                  <gco:Decimal>Postfach 5233</gco:Decimal>
+                </gmd:postBox>
+                <gmd:postalCode>
+                  <gco:CharacterString>3001</gco:CharacterString>
+                </gmd:postalCode>
+                <gmd:city>
+                  <gco:CharacterString>Bern</gco:CharacterString>
+                </gmd:city>
+                <gmd:country>
+                  <gmd:CountryCodeISO>CH</gmd:CountryCodeISO>
+                </gmd:country>
+              </gmd:CI_Address>
+            </gmd:address>
+            <gmd:phone>
+              <gmd:CI_Telephone>
+                <gmd:number>
+                  <gco:CharacterString>+41 (31) 633 98 22</gco:CharacterString>
+                </gmd:number>
+                <gmd:numberType>
+                  <gmd:CI_NumberTypeCode codeListValue="mainNumber" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_NumberTypeCode"/>
+                </gmd:numberType>
+              </gmd:CI_Telephone>
+            </gmd:phone>
+            <gmd:phone>
+              <gmd:CI_Telephone>
+                <gmd:number>
+                  <gco:CharacterString>+41 (31) 633 98 69</gco:CharacterString>
+                </gmd:number>
+                <gmd:numberType>
+                  <gmd:CI_NumberTypeCode codeListValue="directNumber" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_NumberTypeCode"/>
+                </gmd:numberType>
+              </gmd:CI_Telephone>
+            </gmd:phone>
+            <gmd:phone>
+              <gmd:CI_Telephone>
+                <gmd:number>
+                  <gco:CharacterString>+41 (31) 633 98 20</gco:CharacterString>
+                </gmd:number>
+                <gmd:numberType>
+                  <gmd:CI_NumberTypeCode codeListValue="facsimile" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_NumberTypeCode"/>
+                </gmd:numberType>
+              </gmd:CI_Telephone>
+            </gmd:phone>
+            <gmd:electronicalMailAddress>
+              <gco:CharacterString>wenke.schimmelpfennig@erz.be.ch</gco:CharacterString>
+            </gmd:electronicalMailAddress>
+            <gmd:linkage>
+              <gco:CharacterString>www.erz.be.ch</gco:CharacterString>
+              <gmd:PT_FreeText>
+                <gmd:textGroup>
+                  <gmd:LocalisedCharacterString locale="#FR">www.erz.be.ch</gmd:LocalisedCharacterString>
+                </gmd:textGroup>
+              </gmd:PT_FreeText>
+            </gmd:linkage>
+          </gmd:CI_ResponsibleParty>
+        </gmd:pointOfContact>
+        <gmd:pointOfContact>
+          <gmd:role>
+            <gmd:CI_RoleCode codeListValue="distributor" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode"/>
+          </gmd:role>
+          <gmd:CI_ResponsibleParty>
+            <gmd:individualFirstName>
+              <gco:CharacterString>Bernadette</gco:CharacterString>
+            </gmd:individualFirstName>
+            <gmd:individualLastName>
+              <gco:CharacterString>Blättler</gco:CharacterString>
+            </gmd:individualLastName>
+            <gmd:organisationName>
+              <gco:CharacterString>Amt für Geoinformation des Kantons Bern</gco:CharacterString>
+            </gmd:organisationName>
+            <gmd:address>
+              <gmd:CI_Address>
+                <gmd:streetName>
+                  <gco:CharacterString>Reiterstrasse 11</gco:CharacterString>
+                </gmd:streetName>
+                <gmd:addressLine>
+                  <gco:CharacterString>Geodatenmanagement</gco:CharacterString>
+                </gmd:addressLine>
+                <gmd:postBox>
+                  <gco:Decimal/>
+                </gmd:postBox>
+                <gmd:postalCode>
+                  <gco:CharacterString>3011</gco:CharacterString>
+                </gmd:postalCode>
+                <gmd:city>
+                  <gco:CharacterString>Bern</gco:CharacterString>
+                </gmd:city>
+                <gmd:country>
+                  <gmd:CountryCodeISO>CH</gmd:CountryCodeISO>
+                </gmd:country>
+              </gmd:CI_Address>
+            </gmd:address>
+            <gmd:phone>
+              <gmd:CI_Telephone>
+                <gmd:number>
+                  <gco:CharacterString>+41 (31) 633 33 11</gco:CharacterString>
+                </gmd:number>
+                <gmd:numberType>
+                  <gmd:CI_NumberTypeCode codeListValue="mainNumber" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_NumberTypeCode"/>
+                </gmd:numberType>
+              </gmd:CI_Telephone>
+            </gmd:phone>
+            <gmd:phone>
+              <gmd:CI_Telephone>
+                <gmd:number>
+                  <gco:CharacterString>+41 (31) 633 33 30</gco:CharacterString>
+                </gmd:number>
+                <gmd:numberType>
+                  <gmd:CI_NumberTypeCode codeListValue="directNumber" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_NumberTypeCode"/>
+                </gmd:numberType>
+              </gmd:CI_Telephone>
+            </gmd:phone>
+            <gmd:phone>
+              <gmd:CI_Telephone>
+                <gmd:number>
+                  <gco:CharacterString>+41 (31) 633 33 40</gco:CharacterString>
+                </gmd:number>
+                <gmd:numberType>
+                  <gmd:CI_NumberTypeCode codeListValue="facsimile" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_NumberTypeCode"/>
+                </gmd:numberType>
+              </gmd:CI_Telephone>
+            </gmd:phone>
+            <gmd:electronicalMailAddress>
+              <gco:CharacterString>bernadette.blaettler@bve.be.ch</gco:CharacterString>
+            </gmd:electronicalMailAddress>
+            <gmd:linkage>
+              <gco:CharacterString/>
+              <gmd:PT_FreeText>
+                <gmd:textGroup>
+                  <gmd:LocalisedCharacterString locale="#FR"/>
+                </gmd:textGroup>
+              </gmd:PT_FreeText>
+            </gmd:linkage>
+          </gmd:CI_ResponsibleParty>
+        </gmd:pointOfContact>
+        <gmd:pointOfContact>
+          <gmd:role>
+            <gmd:CI_RoleCode codeListValue="distributor" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode"/>
+          </gmd:role>
+          <gmd:CI_ResponsibleParty>
+            <gmd:individualFirstName>
+              <gco:CharacterString>Kurt</gco:CharacterString>
+            </gmd:individualFirstName>
+            <gmd:individualLastName>
+              <gco:CharacterString>Mathys</gco:CharacterString>
+            </gmd:individualLastName>
+            <gmd:organisationName>
+              <gco:CharacterString>Amt für Geoinformation des Kantons Bern</gco:CharacterString>
+            </gmd:organisationName>
+            <gmd:address>
+              <gmd:CI_Address>
+                <gmd:streetName>
+                  <gco:CharacterString>Reiterstrasse 11</gco:CharacterString>
+                </gmd:streetName>
+                <gmd:addressLine>
+                  <gco:CharacterString>Amtliche Vermessung</gco:CharacterString>
+                </gmd:addressLine>
+                <gmd:postBox>
+                  <gco:Decimal/>
+                </gmd:postBox>
+                <gmd:postalCode>
+                  <gco:CharacterString>3011</gco:CharacterString>
+                </gmd:postalCode>
+                <gmd:city>
+                  <gco:CharacterString>Bern</gco:CharacterString>
+                </gmd:city>
+                <gmd:country>
+                  <gmd:CountryCodeISO>CH</gmd:CountryCodeISO>
+                </gmd:country>
+              </gmd:CI_Address>
+            </gmd:address>
+            <gmd:phone>
+              <gmd:CI_Telephone>
+                <gmd:number>
+                  <gco:CharacterString>+41 (31) 633 33 11</gco:CharacterString>
+                </gmd:number>
+                <gmd:numberType>
+                  <gmd:CI_NumberTypeCode codeListValue="mainNumber" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_NumberTypeCode"/>
+                </gmd:numberType>
+              </gmd:CI_Telephone>
+            </gmd:phone>
+            <gmd:phone>
+              <gmd:CI_Telephone>
+                <gmd:number>
+                  <gco:CharacterString>+41 (31) 633 33 29</gco:CharacterString>
+                </gmd:number>
+                <gmd:numberType>
+                  <gmd:CI_NumberTypeCode codeListValue="directNumber" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_NumberTypeCode"/>
+                </gmd:numberType>
+              </gmd:CI_Telephone>
+            </gmd:phone>
+            <gmd:phone>
+              <gmd:CI_Telephone>
+                <gmd:number>
+                  <gco:CharacterString>+41 (31) 633 33 40</gco:CharacterString>
+                </gmd:number>
+                <gmd:numberType>
+                  <gmd:CI_NumberTypeCode codeListValue="facsimile" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_NumberTypeCode"/>
+                </gmd:numberType>
+              </gmd:CI_Telephone>
+            </gmd:phone>
+            <gmd:electronicalMailAddress>
+              <gco:CharacterString>kurt.mathys@bve.be.ch</gco:CharacterString>
+            </gmd:electronicalMailAddress>
+            <gmd:linkage>
+              <gco:CharacterString/>
+              <gmd:PT_FreeText>
+                <gmd:textGroup>
+                  <gmd:LocalisedCharacterString locale="#FR"/>
+                </gmd:textGroup>
+              </gmd:PT_FreeText>
+            </gmd:linkage>
+          </gmd:CI_ResponsibleParty>
+        </gmd:pointOfContact>
+        <gmd:pointOfContact>
+          <gmd:role>
+            <gmd:CI_RoleCode codeListValue="distributor" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode"/>
+          </gmd:role>
+          <gmd:CI_ResponsibleParty>
+            <gmd:individualFirstName>
+              <gco:CharacterString>Tharany</gco:CharacterString>
+            </gmd:individualFirstName>
+            <gmd:individualLastName>
+              <gco:CharacterString>Rajiv</gco:CharacterString>
+            </gmd:individualLastName>
+            <gmd:organisationName>
+              <gco:CharacterString>Amt für Geoinformation des Kantons Bern</gco:CharacterString>
+            </gmd:organisationName>
+            <gmd:address>
+              <gmd:CI_Address>
+                <gmd:streetName>
+                  <gco:CharacterString>Reiterstrasse 11</gco:CharacterString>
+                </gmd:streetName>
+                <gmd:addressLine>
+                  <gco:CharacterString>Geobasisdaten</gco:CharacterString>
+                </gmd:addressLine>
+                <gmd:postBox>
+                  <gco:Decimal/>
+                </gmd:postBox>
+                <gmd:postalCode>
+                  <gco:CharacterString>3011</gco:CharacterString>
+                </gmd:postalCode>
+                <gmd:city>
+                  <gco:CharacterString>Bern</gco:CharacterString>
+                </gmd:city>
+                <gmd:country>
+                  <gmd:CountryCodeISO>CH</gmd:CountryCodeISO>
+                </gmd:country>
+              </gmd:CI_Address>
+            </gmd:address>
+            <gmd:phone>
+              <gmd:CI_Telephone>
+                <gmd:number>
+                  <gco:CharacterString>+41 (31) 633 33 11</gco:CharacterString>
+                </gmd:number>
+                <gmd:numberType>
+                  <gmd:CI_NumberTypeCode codeListValue="mainNumber" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_NumberTypeCode"/>
+                </gmd:numberType>
+              </gmd:CI_Telephone>
+            </gmd:phone>
+            <gmd:phone>
+              <gmd:CI_Telephone>
+                <gmd:number>
+                  <gco:CharacterString>+41 (31) 633 33 27</gco:CharacterString>
+                </gmd:number>
+                <gmd:numberType>
+                  <gmd:CI_NumberTypeCode codeListValue="directNumber" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_NumberTypeCode"/>
+                </gmd:numberType>
+              </gmd:CI_Telephone>
+            </gmd:phone>
+            <gmd:phone>
+              <gmd:CI_Telephone>
+                <gmd:number>
+                  <gco:CharacterString/>
+                </gmd:number>
+                <gmd:numberType>
+                  <gmd:CI_NumberTypeCode codeListValue="facsimile" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_NumberTypeCode"/>
+                </gmd:numberType>
+              </gmd:CI_Telephone>
+            </gmd:phone>
+            <gmd:electronicalMailAddress>
+              <gco:CharacterString>tharany.rajiv@bve.be.ch</gco:CharacterString>
+            </gmd:electronicalMailAddress>
+            <gmd:linkage>
+              <gco:CharacterString/>
+              <gmd:PT_FreeText>
+                <gmd:textGroup>
+                  <gmd:LocalisedCharacterString locale="#FR"/>
+                </gmd:textGroup>
+              </gmd:PT_FreeText>
+            </gmd:linkage>
+          </gmd:CI_ResponsibleParty>
+        </gmd:pointOfContact>
+        <gmd:pointOfContact>
+          <gmd:role>
+            <gmd:CI_RoleCode codeListValue="owner" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode"/>
+          </gmd:role>
+          <gmd:CI_ResponsibleParty>
+            <gmd:individualFirstName>
+              <gco:CharacterString/>
+            </gmd:individualFirstName>
+            <gmd:individualLastName>
+              <gco:CharacterString/>
+            </gmd:individualLastName>
+            <gmd:organisationName>
+              <gco:CharacterString>Amt für Kultur des Kantons Bern Archäologischer Dienst</gco:CharacterString>
+            </gmd:organisationName>
+            <gmd:address>
+              <gmd:CI_Address>
+                <gmd:streetName>
+                  <gco:CharacterString>Brünnenstr. 66</gco:CharacterString>
+                </gmd:streetName>
+                <gmd:addressLine>
+                  <gco:CharacterString/>
+                </gmd:addressLine>
+                <gmd:postBox>
+                  <gco:Decimal>Postfach 5233</gco:Decimal>
+                </gmd:postBox>
+                <gmd:postalCode>
+                  <gco:CharacterString>3001</gco:CharacterString>
+                </gmd:postalCode>
+                <gmd:city>
+                  <gco:CharacterString>Bern</gco:CharacterString>
+                </gmd:city>
+                <gmd:country>
+                  <gmd:CountryCodeISO>CH</gmd:CountryCodeISO>
+                </gmd:country>
+              </gmd:CI_Address>
+            </gmd:address>
+            <gmd:phone>
+              <gmd:CI_Telephone>
+                <gmd:number>
+                  <gco:CharacterString>+41 (31) 633 98 22</gco:CharacterString>
+                </gmd:number>
+                <gmd:numberType>
+                  <gmd:CI_NumberTypeCode codeListValue="mainNumber" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_NumberTypeCode"/>
+                </gmd:numberType>
+              </gmd:CI_Telephone>
+            </gmd:phone>
+            <gmd:phone>
+              <gmd:CI_Telephone>
+                <gmd:number>
+                  <gco:CharacterString/>
+                </gmd:number>
+                <gmd:numberType>
+                  <gmd:CI_NumberTypeCode codeListValue="directNumber" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_NumberTypeCode"/>
+                </gmd:numberType>
+              </gmd:CI_Telephone>
+            </gmd:phone>
+            <gmd:phone>
+              <gmd:CI_Telephone>
+                <gmd:number>
+                  <gco:CharacterString>+41 (31) 633 98 20</gco:CharacterString>
+                </gmd:number>
+                <gmd:numberType>
+                  <gmd:CI_NumberTypeCode codeListValue="facsimile" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_NumberTypeCode"/>
+                </gmd:numberType>
+              </gmd:CI_Telephone>
+            </gmd:phone>
+            <gmd:electronicalMailAddress>
+              <gco:CharacterString>adb@erz.be.ch</gco:CharacterString>
+            </gmd:electronicalMailAddress>
+            <gmd:linkage>
+              <gco:CharacterString>www.erz.be.ch</gco:CharacterString>
+              <gmd:PT_FreeText>
+                <gmd:textGroup>
+                  <gmd:LocalisedCharacterString locale="#FR">www.erz.be.ch</gmd:LocalisedCharacterString>
+                </gmd:textGroup>
+              </gmd:PT_FreeText>
+            </gmd:linkage>
+          </gmd:CI_ResponsibleParty>
+        </gmd:pointOfContact>
+        <gmd:extent>
+          <gmd:EX_Extent>
+            <gmd:description>
+              <gco:CharacterString>Kanton Bern</gco:CharacterString>
+              <gmd:PT_FreeText>
+                <gmd:textGroup>
+                  <gmd:LocalisedCharacterString locale="#FR">Canton de Berne</gmd:LocalisedCharacterString>
+                </gmd:textGroup>
+              </gmd:PT_FreeText>
+            </gmd:description>
+            <gmd:geographicElement>
+              <gmd:EX_GeographicBoundingBox>
+                <gmd:northBoundLatitude>
+                  <gco:Decimal>50.2048722753019</gco:Decimal>
+                </gmd:northBoundLatitude>
+                <gmd:southBoundLatitude>
+                  <gco:Decimal>46.25314159057353</gco:Decimal>
+                </gmd:southBoundLatitude>
+                <gmd:eastBoundLongitude>
+                  <gco:Decimal>8.495251768979102</gco:Decimal>
+                </gmd:eastBoundLongitude>
+                <gmd:westBoundLongitude>
+                  <gco:Decimal>2.8035333176365884</gco:Decimal>
+                </gmd:westBoundLongitude>
+              </gmd:EX_GeographicBoundingBox>
+            </gmd:geographicElement>
+          </gmd:EX_Extent>
+        </gmd:extent>
+        <gmd:characterSet>
+          <gmd:MD_CharacterSetCode codeListValue="utf8" codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_CharacterSetCode"/>
+        </gmd:characterSet>
+        <gmd:language>
+          <gmd:LanguageCodeISO>ger</gmd:LanguageCodeISO>
+        </gmd:language>
+        <gmd:language>
+          <gmd:LanguageCodeISO>fre</gmd:LanguageCodeISO>
+        </gmd:language>
+        <gmd:status>
+          <gmd:MD_ProgressCode codeListValue="completed" codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ProgressCode"/>
+        </gmd:status>
+        <bee:version>
+          <bee:DD_DataDictionary>
+            <bee:versionYear>
+              <gco:Decimal>2014</gco:Decimal>
+            </bee:versionYear>
+            <bee:versionNumber>
+              <gco:Decimal>1</gco:Decimal>
+            </bee:versionNumber>
+          </bee:DD_DataDictionary>
+        </bee:version>
+        <gmd:supplementalInformation>
+          <gco:CharacterString>Archäologische Funde sind Eigentum des Kantons Bern. Grabungen und der Einsatz von Metalldetektoren zum Ausgraben von archäologischen Objekten sind strafbar. Alle Bauvorhaben in archäologischen Schutzperimetern müssen dem Archäologischen Dienst des Kantons Bern frühzeitig, d.h. vor Baubeginn, gemeldet werden. &#xD;Treten bei Bodeneingriffen archäologische Objekte oder Strukturen zutage, so ist der betreffende Bereich unverändert zu lassen. Informieren Sie umgehend den Archäologischen Dienst. &#xD;Perimeter, in denen archäologische Strukturen vorhanden sind, sind zusätzlich durch ein archäologisches Schutzgebiet definiert. Die Archäologie-Perimeter sind nicht Teil dieses Geoproduktes. Eine Übersicht über die archäologischen Perimeter in Ihrer Gemeinde erhalten Sie auf Anfrage beim Archäologischen Dienst Bern.</gco:CharacterString>
+          <gmd:PT_FreeText>
+            <gmd:textGroup>
+              <gmd:LocalisedCharacterString locale="#FR">Les trouvailles archéologiques sont la propriété du canton de Berne. Les fouilles et l’usage de détecteurs de métaux dans le but de rechercher des objets archéologiques est punissable. Tous les projets de constructions dans les périmètres archéologiques doivent être soumis au préalable, soit avant le début des travaux, au Service archéologique du canton de Berne.&#xD;Lorsque des objets ou des structures archéologiques apparaissent à l’occasion de travaux de terrassement, le secteur concerné doit être laissé tel quel. Le Service archéologique doit en être informé immédiatement.&#xD;Les périmètres qui comportent des structures archéologiques sont encore définis dans un périmètre de protection archéologique. Les périmètres archéologiques ne font pas partie de ce géo-produit. Une vue globale des périmètres archéologiques de votre commune peut être obtenue auprès su Service archéologiquedu canton de Berne.</gmd:LocalisedCharacterString>
+            </gmd:textGroup>
+          </gmd:PT_FreeText>
+        </gmd:supplementalInformation>
+        <gmd:resourceConstraints>
+          <gmd:MD_Constraints>
+            <gmd:useLimitation>
+              <gco:CharacterString>A: öffentlich zugängliche Geodaten</gco:CharacterString>
+              <gmd:PT_FreeText>
+                <gmd:textGroup>
+                  <gmd:LocalisedCharacterString locale="#FR">A: géodonnées accessibles au public</gmd:LocalisedCharacterString>
+                </gmd:textGroup>
+              </gmd:PT_FreeText>
+            </gmd:useLimitation>
+            <bee:delivery>
+              <gco:CharacterString>Die Abgabe der Geodaten ist nur in Absprache mit dem Datenherr erlaubt.</gco:CharacterString>
+              <gmd:PT_FreeText>
+                <gmd:textGroup>
+                  <gmd:LocalisedCharacterString locale="#FR">La transmission des géodonnées se fait en accord avec le fournisseur.</gmd:LocalisedCharacterString>
+                </gmd:textGroup>
+              </gmd:PT_FreeText>
+            </bee:delivery>
+            <bee:delivery>
+              <gco:CharacterString>Der Internet-Download ist nicht erlaubt.</gco:CharacterString>
+              <gmd:PT_FreeText>
+                <gmd:textGroup>
+                  <gmd:LocalisedCharacterString locale="#FR">Le téléchargement des géodonnées sur Internet n'est pas autorisé.</gmd:LocalisedCharacterString>
+                </gmd:textGroup>
+              </gmd:PT_FreeText>
+            </bee:delivery>
+            <bee:delivery>
+              <gco:CharacterString>Die Internetpublikation ist nicht erlaubt.</gco:CharacterString>
+              <gmd:PT_FreeText>
+                <gmd:textGroup>
+                  <gmd:LocalisedCharacterString locale="#FR">La publication des géodonnées sur Internet n'est pas autorisée.</gmd:LocalisedCharacterString>
+                </gmd:textGroup>
+              </gmd:PT_FreeText>
+            </bee:delivery>
+          </gmd:MD_Constraints>
+        </gmd:resourceConstraints>
+        <gmd:resourceConstraints>
+          <gmd:MD_LegalConstraints>
+            <gmd:otherConstraints>
+              <gco:CharacterString>4. Abgabe mit Restriktionen gemäss geltendem Vertrag.</gco:CharacterString>
+              <gmd:PT_FreeText>
+                <gmd:textGroup>
+                  <gmd:LocalisedCharacterString locale="#FR">4. Remise avec restrictions selon le contrat en vigueur.</gmd:LocalisedCharacterString>
+                </gmd:textGroup>
+              </gmd:PT_FreeText>
+            </gmd:otherConstraints>
+            <bee:legality>
+              <gco:CharacterString>Für Richtigkeit und Vollständigkeit der Daten wird keine Haftung übernommen. Rechtlich verbindliche Auskünfte sind beim Datenherrn einzuholen.</gco:CharacterString>
+              <gmd:PT_FreeText>
+                <gmd:textGroup>
+                  <gmd:LocalisedCharacterString locale="#FR">Ces données ne sont pas garanties quant à leur exactitude ni quant à leur exhaustivité. S’adresser au propriétaire des données pour obtenir des informations ayant force légale.</gmd:LocalisedCharacterString>
+                </gmd:textGroup>
+              </gmd:PT_FreeText>
+            </bee:legality>
+            <gmd:useLimitation>
+              <gco:CharacterString>Archäologisches Inventar © Archäologischer Dienst des Kantons Bern</gco:CharacterString>
+              <gmd:PT_FreeText>
+                <gmd:textGroup>
+                  <gmd:LocalisedCharacterString locale="#FR">Inventaire archéologique © Service archéologique du canton de Berne</gmd:LocalisedCharacterString>
+                </gmd:textGroup>
+              </gmd:PT_FreeText>
+            </gmd:useLimitation>
+            <bee:dataProtection>
+              <gco:CharacterString>Der Datensatz enthält keine Personendaten, die dem Datenschutz unterliegen.</gco:CharacterString>
+              <gmd:PT_FreeText>
+                <gmd:textGroup>
+                  <gmd:LocalisedCharacterString locale="#FR">Le fichier ne contient aucune donnée personnelle soumise à la législation sur la protection des données.</gmd:LocalisedCharacterString>
+                </gmd:textGroup>
+              </gmd:PT_FreeText>
+            </bee:dataProtection>
+          </gmd:MD_LegalConstraints>
+        </gmd:resourceConstraints>
+        <gmd:resourceMaintenance>
+          <gmd:MD_MaintenanceInformation>
+            <gmd:maintenanceAndUpdateFrequency>
+              <gmd:MD_MaintenanceFrequencyCode codeListValue="annually" codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_MaintenanceFrequencyCode"/>
+            </gmd:maintenanceAndUpdateFrequency>
+            <gmd:maintenanceNote>
+              <gco:CharacterString/>
+              <gmd:PT_FreeText>
+                <gmd:textGroup>
+                  <gmd:LocalisedCharacterString locale="#FR"/>
+                </gmd:textGroup>
+              </gmd:PT_FreeText>
+            </gmd:maintenanceNote>
+          </gmd:MD_MaintenanceInformation>
+        </gmd:resourceMaintenance>
+      </gmd:MD_DataIdentification>
+    </gmd:identificationInfo>
+    <gmd:contentInfo>
+      <gmd:MD_FeatureCatalogueDescription>
+        <bee:section>
+          <gco:CharacterString/>
+        </bee:section>
+        <bee:modelType>
+          <bee:modelTypeCode codeListValue="FeatureDescription" codeList="http://www.be.ch/bve/agi/2010/resources/codeList.xml#EX_ModelTypeCode"/>
+        </bee:modelType>
+        <bee:deltacheckerReport>
+          <gco:CharacterString>http://files.be.ch/bve/agi/geoportal/geo/deltachecker/ARCHINV_2014_01.pdf</gco:CharacterString>
+        </bee:deltacheckerReport>
+      </gmd:MD_FeatureCatalogueDescription>
+    </gmd:contentInfo>
+    <gmd:dataQualityInfo>
+      <gmd:DQ_DataQuality>
+        <gmd:scope>
+          <gmd:DQ_Scope>
+            <gmd:level>
+              <gmd:MD_ScopeCode codeListValue="dataset" codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode"/>
+            </gmd:level>
+          </gmd:DQ_Scope>
+        </gmd:scope>
+      </gmd:DQ_DataQuality>
+    </gmd:dataQualityInfo>
+    <gmd:legislationInformation>
+      <gmd:MD_Legislation>
+        <gmd:title>
+          <gmd:CI_Citation>
+            <gmd:title>
+              <gco:CharacterString>Bundesgesetz über den Natur- und Heimatschutz (NHG, SR 451) Art. 5, Art. 16</gco:CharacterString>
+              <gmd:PT_FreeText>
+                <gmd:textGroup>
+                  <gmd:LocalisedCharacterString locale="#FR">Loi fédérale sur la protection de la nature et du paysage (LPN, RS 451) Art. 5, Art. 16</gmd:LocalisedCharacterString>
+                </gmd:textGroup>
+              </gmd:PT_FreeText>
+            </gmd:title>
+            <gmd:date>
+              <gmd:CI_Date>
+                <gmd:date>
+                  <gco:Date>1966-07-01</gco:Date>
+                </gmd:date>
+                <gmd:dateType>
+                  <gmd:CI_DateTypeCode codeListValue="publication" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode"/>
+                </gmd:dateType>
+              </gmd:CI_Date>
+            </gmd:date>
+          </gmd:CI_Citation>
+        </gmd:title>
+        <gmd:legislationType>
+          <gmd:CI_LegislationTypeCode codeListValue="nationalLaw" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_LegislationTypeCode"/>
+        </gmd:legislationType>
+        <gmd:country>
+          <gmd:CountryCodeISO>ch</gmd:CountryCodeISO>
+        </gmd:country>
+        <gmd:language>
+          <gmd:LanguageCodeISO>ger</gmd:LanguageCodeISO>
+        </gmd:language>
+        <gmd:language>
+          <gmd:LanguageCodeISO>fre</gmd:LanguageCodeISO>
+        </gmd:language>
+      </gmd:MD_Legislation>
+    </gmd:legislationInformation>
+    <gmd:legislationInformation>
+      <gmd:MD_Legislation>
+        <gmd:title>
+          <gmd:CI_Citation>
+            <gmd:title>
+              <gco:CharacterString>Denkmalpflegegesetz (DPG, BSG 426.41) Art. 10, Art. 23 bis 26</gco:CharacterString>
+              <gmd:PT_FreeText>
+                <gmd:textGroup>
+                  <gmd:LocalisedCharacterString locale="#FR">Loi sur la protection du patrimoine (LPat, RSB 426.41) Art. 10, Art. 23 bis 26</gmd:LocalisedCharacterString>
+                </gmd:textGroup>
+              </gmd:PT_FreeText>
+            </gmd:title>
+            <gmd:date>
+              <gmd:CI_Date>
+                <gmd:date>
+                  <gco:Date>1999-09-08</gco:Date>
+                </gmd:date>
+                <gmd:dateType>
+                  <gmd:CI_DateTypeCode codeListValue="publication" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode"/>
+                </gmd:dateType>
+              </gmd:CI_Date>
+            </gmd:date>
+          </gmd:CI_Citation>
+        </gmd:title>
+        <gmd:legislationType>
+          <gmd:CI_LegislationTypeCode codeListValue="cantonalLaw" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_LegislationTypeCode"/>
+        </gmd:legislationType>
+        <gmd:country>
+          <gmd:CountryCodeISO>ch</gmd:CountryCodeISO>
+        </gmd:country>
+        <gmd:language>
+          <gmd:LanguageCodeISO>ger</gmd:LanguageCodeISO>
+        </gmd:language>
+      </gmd:MD_Legislation>
+    </gmd:legislationInformation>
+    <gmd:legislationInformation>
+      <gmd:MD_Legislation>
+        <gmd:title>
+          <gmd:CI_Citation>
+            <gmd:title>
+              <gco:CharacterString>Denkmalpflegeverordnung (DPV, BSG 426.411) Art. 19 bis 25</gco:CharacterString>
+              <gmd:PT_FreeText>
+                <gmd:textGroup>
+                  <gmd:LocalisedCharacterString locale="#FR">Ordonnance sur la protection du patrimoine (OPat, RSB 426.411) Art. 19 bis 25</gmd:LocalisedCharacterString>
+                </gmd:textGroup>
+              </gmd:PT_FreeText>
+            </gmd:title>
+            <gmd:date>
+              <gmd:CI_Date>
+                <gmd:date>
+                  <gco:Date>2000-10-25</gco:Date>
+                </gmd:date>
+                <gmd:dateType>
+                  <gmd:CI_DateTypeCode codeListValue="publication" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode"/>
+                </gmd:dateType>
+              </gmd:CI_Date>
+            </gmd:date>
+          </gmd:CI_Citation>
+        </gmd:title>
+        <gmd:legislationType>
+          <gmd:CI_LegislationTypeCode codeListValue="cantonalLaw" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_LegislationTypeCode"/>
+        </gmd:legislationType>
+        <gmd:country>
+          <gmd:CountryCodeISO>ch</gmd:CountryCodeISO>
+        </gmd:country>
+        <gmd:language>
+          <gmd:LanguageCodeISO>ger</gmd:LanguageCodeISO>
+        </gmd:language>
+      </gmd:MD_Legislation>
+    </gmd:legislationInformation>
+    <gmd:legislationInformation>
+      <gmd:MD_Legislation>
+        <gmd:title>
+          <gmd:CI_Citation>
+            <gmd:title>
+              <gco:CharacterString>Baugesetz (BauG, BSG 721) Art. 10, Art. 64</gco:CharacterString>
+              <gmd:PT_FreeText>
+                <gmd:textGroup>
+                  <gmd:LocalisedCharacterString locale="#FR">Loi sur les constructions (LC, RSB 721) Art. 10, Art. 64</gmd:LocalisedCharacterString>
+                </gmd:textGroup>
+              </gmd:PT_FreeText>
+            </gmd:title>
+            <gmd:date>
+              <gmd:CI_Date>
+                <gmd:date>
+                  <gco:Date>1985-06-09</gco:Date>
+                </gmd:date>
+                <gmd:dateType>
+                  <gmd:CI_DateTypeCode codeListValue="publication" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode"/>
+                </gmd:dateType>
+              </gmd:CI_Date>
+            </gmd:date>
+          </gmd:CI_Citation>
+        </gmd:title>
+        <gmd:legislationType>
+          <gmd:CI_LegislationTypeCode codeListValue="cantonalLaw" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_LegislationTypeCode"/>
+        </gmd:legislationType>
+        <gmd:country>
+          <gmd:CountryCodeISO>ch</gmd:CountryCodeISO>
+        </gmd:country>
+        <gmd:language>
+          <gmd:LanguageCodeISO>ger</gmd:LanguageCodeISO>
+        </gmd:language>
+      </gmd:MD_Legislation>
+    </gmd:legislationInformation>
+    <gmd:legislationInformation>
+      <gmd:MD_Legislation>
+        <gmd:title>
+          <gmd:CI_Citation>
+            <gmd:title>
+              <gco:CharacterString>Bauverordnung (BauV, BSG 721.1) Art. 13</gco:CharacterString>
+              <gmd:PT_FreeText>
+                <gmd:textGroup>
+                  <gmd:LocalisedCharacterString locale="#FR">Ordonnance sur les constructions (OC, RSB 721.1) Art. 13</gmd:LocalisedCharacterString>
+                </gmd:textGroup>
+              </gmd:PT_FreeText>
+            </gmd:title>
+            <gmd:date>
+              <gmd:CI_Date>
+                <gmd:date>
+                  <gco:Date>1985-03-06</gco:Date>
+                </gmd:date>
+                <gmd:dateType>
+                  <gmd:CI_DateTypeCode codeListValue="publication" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode"/>
+                </gmd:dateType>
+              </gmd:CI_Date>
+            </gmd:date>
+          </gmd:CI_Citation>
+        </gmd:title>
+        <gmd:legislationType>
+          <gmd:CI_LegislationTypeCode codeListValue="cantonalLaw" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_LegislationTypeCode"/>
+        </gmd:legislationType>
+        <gmd:country>
+          <gmd:CountryCodeISO>ch</gmd:CountryCodeISO>
+        </gmd:country>
+        <gmd:language>
+          <gmd:LanguageCodeISO>ger</gmd:LanguageCodeISO>
+        </gmd:language>
+      </gmd:MD_Legislation>
+    </gmd:legislationInformation>
+    <gmd:distributionInfo>
+      <gmd:MD_Distribution>
+        <gmd:transferOptions>
+          <gmd:MD_DigitalTransferOptions>
+            <gmd:transferSize>
+              <gco:Decimal>1</gco:Decimal>
+            </gmd:transferSize>
+          </gmd:MD_DigitalTransferOptions>
+        </gmd:transferOptions>
+        <gmd:distributionFormat>
+          <gmd:MD_Format>
+            <gmd:name>
+              <gco:CharacterString>ZIP</gco:CharacterString>
+            </gmd:name>
+            <gmd:version>
+              <gco:CharacterString>1</gco:CharacterString>
+            </gmd:version>
+            <gmd:distributorFormat>
+              <gmd:MD_Distributor>
+                <gmd:distributionOrderProcess>
+                  <gmd:MD_StandardOrderProcess>
+                    <gmd:orderingInstructions>
+                      <gco:CharacterString>Kein externer Verkauf.</gco:CharacterString>
+                      <gmd:PT_FreeText>
+                        <gmd:textGroup>
+                          <gmd:LocalisedCharacterString locale="#FR">Pas de vente externe.</gmd:LocalisedCharacterString>
+                        </gmd:textGroup>
+                      </gmd:PT_FreeText>
+                    </gmd:orderingInstructions>
+                  </gmd:MD_StandardOrderProcess>
+                </gmd:distributionOrderProcess>
+              </gmd:MD_Distributor>
+            </gmd:distributorFormat>
+          </gmd:MD_Format>
+        </gmd:distributionFormat>
+      </gmd:MD_Distribution>
+    </gmd:distributionInfo>
+    <sdi:platform harvested="false"/>
+  </gmd:MD_Metadata>
