@@ -1,7 +1,7 @@
 FME_Demos
 =========
 
-Sample FME-Workbenches for an internal Workshop (17 April 2014)
+Sample FME-Workbenches for an internal Workshop (3 July 2014)
 
 Demo 1: Usage of Published and Private Parameters
 

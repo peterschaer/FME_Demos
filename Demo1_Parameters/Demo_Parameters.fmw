@@ -6,7 +6,7 @@
 #    
 #    
 #    fme.exe Demo_Parameters.fmw
-#          --BFSNR 954
+#          --BFSNR 733
 #    
 #    
 #! PASSWORD=""
@@ -38,7 +38,7 @@
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2014-04-15T11:28:17"
+#! LAST_SAVE_DATE="2014-07-02T13:06:54"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -642,7 +642,7 @@
 #! IDENTIFIER="3"
 #! FEAT_GEOMTYPE="wkb_point wkb_point_xyz wkb_line wkb_line_xyz wkb_polygon wkb_polygon_xyz wkb_geometry_collection wkb_geometry_collection_xyz wkb_multi_point wkb_multi_point_xyz wkb_multi_line wkb_multi_line_xyz wkb_multi_polygon wkb_multi_polygon_xyz"
 #! POSITION="103 -229"
-#! ORDER="3"
+#! ORDER="2"
 #! COLLAPSED="false"
 #! KEYWORD="SPATIALITE_1"
 #! ENABLED="true"
@@ -673,12 +673,12 @@
 #! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #! IS_SOURCE="false"
-#! NODE_NAME="$(BFSNR)"
+#! NODE_NAME="BFS"
 #! IS_EDITABLE="true"
 #! IDENTIFIER="7"
 #! FEAT_GEOMTYPE="shape_point"
 #! POSITION="1998 -407"
-#! ORDER="8"
+#! ORDER="7"
 #! COLLAPSED="false"
 #! KEYWORD="SHAPE_1"
 #! ENABLED="true"
@@ -709,17 +709,12 @@
 #! <GLOBAL_PARAMETERS>
 #! <GLOBAL_PARAMETER
 #! GUI_LINE="GUI INTEGER_OR_ATTR BFSNR BFS-Nummer:"
-#! DEFAULT_VALUE="954"
+#! DEFAULT_VALUE="733"
 #! IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
 #! GUI_LINE="GUI IGNORE MULTIFILE SPATIALITE_DB SpatiaLite_Database_Files(*.sl3;*.db;*.sqlite)|*.sl3;*.db;*.sqlite|SpatiaLite_Database_Files(*.sl3)|*.sl3|SpatiaLite_Database_Files(*.db)|*.db|SpatiaLite_Database_Files(*.sqlite)|*.sqlite|All_files(*.*)|*.* Source SpatiaLite Database File(s):"
 #! DEFAULT_VALUE="bauinv.sqlite"
-#! IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#! GUI_LINE="GUI IGNORE DIRNAME SHAPEDIR Destination Esri Shape Directory:"
-#! DEFAULT_VALUE="."
 #! IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
@@ -732,13 +727,18 @@
 #! DEFAULT_VALUE="import&lt;space&gt;random&lt;lf&gt;&lt;lf&gt;randomBFS&lt;space&gt;=&lt;space&gt;0&lt;lf&gt;&lt;lf&gt;BFSFile&lt;space&gt;=&lt;space&gt;open&lt;openparen&gt;FME_MacroValues&lt;openbracket&gt;&lt;apos&gt;CSVFILE&lt;apos&gt;&lt;closebracket&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;r&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;BFSFileContent&lt;space&gt;=&lt;space&gt;BFSFile.read&lt;openparen&gt;&lt;closeparen&gt;&lt;lf&gt;BFSFile.close&lt;openparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;BFSNumbers&lt;space&gt;=&lt;space&gt;BFSFileContent.split&lt;openparen&gt;&lt;apos&gt;&lt;backslash&gt;n&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;randomBFS&lt;space&gt;=&lt;space&gt;int&lt;openparen&gt;random.choice&lt;openparen&gt;BFSNumbers&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;return&lt;space&gt;randomBFS"
 #! IS_STAND_ALONE="true"
 #! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI IGNORE DIRNAME SHAPEDIR Destination Esri Shape Directory:"
+#! DEFAULT_VALUE="."
+#! IS_STAND_ALONE="false"
+#! />
 #! </GLOBAL_PARAMETERS>
 #! <COMMENTS>
 #! <COMMENT
 #! IDENTIFIER="4"
 #! COMMENT_VALUE="Bauinventar (Spatialite)"
 #! POSITION="59 -90"
-#! ORDER="4"
+#! ORDER="3"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
 #! COMMENT_TYPE="REGULAR"
@@ -748,7 +748,7 @@
 #! IDENTIFIER="11"
 #! COMMENT_VALUE="Gemeinde-Shapefile"
 #! POSITION="1978 -307"
-#! ORDER="5"
+#! ORDER="4"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
 #! COMMENT_TYPE="REGULAR"
@@ -758,7 +758,7 @@
 #! IDENTIFIER="12"
 #! COMMENT_VALUE="Gewünschte Gemeinde per&#13;&#10;BFS-Nummer herausfiltern"
 #! POSITION="961 -129"
-#! ORDER="7"
+#! ORDER="6"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
 #! COMMENT_TYPE="REGULAR"
@@ -775,7 +775,7 @@
 #! TYPE="TestFilter"
 #! VERSION="1"
 #! POSITION="1045 -325"
-#! ORDER="6"
+#! ORDER="5"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! >
@@ -858,12 +858,10 @@ GUI IGNORE SourceDataset_SPATIALITE_1,SPATIALITE_IN_ENCODING_SPATIALITE_1,DestDa
 
 
 
-DEFAULT_MACRO BFSNR 954
+DEFAULT_MACRO BFSNR 733
 GUI INTEGER BFSNR BFS-Nummer:
 DEFAULT_MACRO SPATIALITE_DB bauinv.sqlite
 GUI IGNORE MULTIFILE SPATIALITE_DB SpatiaLite_Database_Files(*.sl3;*.db;*.sqlite)|*.sl3;*.db;*.sqlite|SpatiaLite_Database_Files(*.sl3)|*.sl3|SpatiaLite_Database_Files(*.db)|*.db|SpatiaLite_Database_Files(*.sqlite)|*.sqlite|All_files(*.*)|*.* Source SpatiaLite Database File(s):
-DEFAULT_MACRO SHAPEDIR .
-GUI IGNORE DIRNAME SHAPEDIR Destination Esri Shape Directory:
 DEFAULT_MACRO CSVFILE bfsnr.csv
 GUI IGNORE TEXT CSVFILE CSV-File:
 INCLUDE PYTHON
@@ -888,6 +886,8 @@ if value == None:
 else:
   return { macroName : str(value) }
 END_INCLUDE
+DEFAULT_MACRO SHAPEDIR .
+GUI IGNORE DIRNAME SHAPEDIR Destination Esri Shape Directory:
 INCLUDE TCL
 proc __FME_ExpandMacros {text {maxlevels 100}} {
    if { $maxlevels <= 0 } { return $text; }
@@ -935,17 +935,17 @@ INCLUDE [	puts "MACRO BFSNR__FMEENCODED__ [__FME_EvalAndEncodeMacro BFSNR]" ; ]
 
 INCLUDE [	puts "MACRO SPATIALITE_DB__FMEENCODED__ [__FME_EvalAndEncodeMacro SPATIALITE_DB]" ; ]
 
-INCLUDE [	puts "MACRO SHAPEDIR__FMEENCODED__ [__FME_EvalAndEncodeMacro SHAPEDIR]" ; ]
-
 INCLUDE [	puts "MACRO CSVFILE__FMEENCODED__ [__FME_EvalAndEncodeMacro CSVFILE]" ; ]
 
 INCLUDE [ ]
 
+INCLUDE [	puts "MACRO SHAPEDIR__FMEENCODED__ [__FME_EvalAndEncodeMacro SHAPEDIR]" ; ]
+
 INCLUDE [ if {{$(BFSNR)} == {}} { puts_real {Parameter 'BFSNR' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(SPATIALITE_DB)} == {}} { puts_real {Parameter 'SPATIALITE_DB' must be given a value.}; exit 1; }; ]
-INCLUDE [ if {{$(SHAPEDIR)} == {}} { puts_real {Parameter 'SHAPEDIR' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(CSVFILE)} == {}} { puts_real {Parameter 'CSVFILE' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(RANDOMBFS)} == {}} { puts_real {Parameter 'RANDOMBFS' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SHAPEDIR)} == {}} { puts_real {Parameter 'SHAPEDIR' must be given a value.}; exit 1; }; ]
 #! START_HEADER
 #! START_WB_HEADER
 READER_TYPE SPATIALITE
@@ -1109,7 +1109,7 @@ FACTORY_DEF * TeeFactory FACTORY_NAME TestFilter_<lt>UNFILTERED<gt> INPUT FEATUR
 FACTORY_DEF * TeeFactory   FACTORY_NAME "TestFilter <lt>UNFILTERED<gt> Output Nuker"   INPUT FEATURE_TYPE TestFilter_<lt>UNFILTERED<gt>
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "TestFilter_BFSFILTER -> $(BFSNR) Correlator"    INPUT FEATURE_TYPE TestFilter_BFSFILTER    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,SHAPE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,$(BFSNR__FMEENCODED__))
+FACTORY_DEF * TeeFactory    FACTORY_NAME "TestFilter_BFSFILTER -> BFS Correlator"    INPUT FEATURE_TYPE TestFilter_BFSFILTER    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,SHAPE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,BFS)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   INPUT FEATURE_TYPE *   TEST @Value(__wb_out_feat_type__) != ""   OUTPUT PASSED FEATURE_TYPE *     @FeatureType(@Value(__wb_out_feat_type__))   OUTPUT FAILED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
@@ -1118,4 +1118,4 @@ FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   IN
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
 
 # -------------------------------------------------------------------------
-SHAPE_1_DEF "$(BFSNR)"   SHAPE_GEOMETRY               shape_point   url                          char(255)   nummer                       char(255)   plz                          number(11,0)   k_objekt                     char(255)   baugruppe1                   char(255)   code                         number(11,0)   baugruppe3                   char(255)   gemeinde                     char(255)   strasse                      char(255)   begid                        number(11,0)   bfs                          number(11,0)   baugruppe2                   char(255)   io_id                        number(11,0)   koord_y                      number(11,0)   ort                          char(255)   status                       char(255)   koord_x                      number(11,0)
+SHAPE_1_DEF BFS   SHAPE_GEOMETRY               shape_point   url                          char(255)   nummer                       char(255)   plz                          number(11,0)   k_objekt                     char(255)   baugruppe1                   char(255)   code                         number(11,0)   baugruppe3                   char(255)   gemeinde                     char(255)   strasse                      char(255)   begid                        number(11,0)   bfs                          number(11,0)   baugruppe2                   char(255)   io_id                        number(11,0)   koord_y                      number(11,0)   ort                          char(255)   status                       char(255)   koord_x                      number(11,0)

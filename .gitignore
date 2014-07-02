@@ -1,4 +1,5 @@
 *.log
 *.lock
 *.recover
+*.ffs
 schema.ini
